@@ -10,7 +10,6 @@ export default function Home() {
     <main className="min-h-screen bg-space-950 text-slate-200 selection:bg-primary-500/30">
       <Hero />
       <About />
-      <Skills />
       <Experience />
       <Projects />
       <footer className="py-8 text-center text-slate-600 text-sm border-t border-slate-900/50 bg-space-950">
