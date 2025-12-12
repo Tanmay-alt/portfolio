@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-space-950 text-slate-200 selection:bg-primary-500/30">
       <Hero />
+      <About />
       <Skills />
       <Experience />
       <Projects />

@@ -16,11 +16,12 @@ export const resumeData = {
             location: "Atlanta, GA",
         }
     ],
+    summary: "Aspiring Cybersecurity Engineer & Data Analyst with a rigorous CS background from Georgia Tech. Passionate about building secure-by-design systems, automating threat detection with AI/LLMs, and deriving actionable insights from complex datasets. Proven track record in optimizing performance for federal agencies (FDA, NSF) and architecting scalable, full-stack security solutions.",
     skills: {
-        programming: ["Java", "Python", "JavaScript", "C", "C#", "C++", "SQL", "CSS", "Bash", "Excel", "Unix/Linux", "PyTorch", "Docker", "React", "Git", "Jira", "Confluence"],
-        technical: ["AWS", "Computer Arc", "Agile Methodologies", "OOP Principles", "LLMs", "ML", "RESTful APIs", "PyTorch", "ServiceNow", "Computer Vision"],
-        dataAnalytics: ["Power BI", "ETL Pipelines", "Statistical Concepts", "Applied Mathematics", "Data Visualization", "Prediction modeling"],
-        security: ["SOC", "Threat Detection", "TCP/IP", "Network Monitoring", "Encryption Protocols", "Authentication", "Application Security"],
+        cybersecurity: ["DevSecOps", "Zero Trust Architecture", "SIEM (Splunk)", "Vulnerability Assessment", "NIST Framework", "Threat Hunting", "Network Forensics", "Identity & Access Management (IAM)", "Penetration Testing (Kali Linux)", "OWASP Top 10"],
+        dataScience: ["Predictive Analytics", "Big Data (Spark/Hadoop)", "Tableau", "Power BI", "TensorFlow/Keras", "Statistical Modeling", "ETL Pipelines", "Data Mining", "Python (Pandas/NumPy)", "SQL Optimization"],
+        computerScience: ["CI/CD Pipelines", "Microservices Architecture", "Cloud Native (AWS/Azure)", "System Design", "Distributed Systems", "RESTful/GraphQL APIs", "Containerization (Docker/Kubernetes)", "Agile/Scrum", "Git Workflow", "Full-Stack Development"],
+        technical: ["Computer Arc", "OOP Principles", "Bash Scripting", "Unix/Linux Administration", "Jira/Confluence"]
     },
     experience: [
         {
@@ -70,6 +71,7 @@ export const resumeData = {
         {
             name: "Threat Response & Automation Platform",
             tech: "Full-Stack (Python, PostgreSQL, JS)",
+            github: "https://github.com/Tanmay-alt/SCAM_DETECTOR",
             points: [
                 "Reduced manual analysis time for security teams by 20% by architecting a full-stack web/mobile environment.",
                 "Improved incident response time by 17% by integrating the Google Gemini API to create an AI phishing simulator.",
@@ -79,6 +81,7 @@ export const resumeData = {
         {
             name: "Visual Authentication & Networked Tracking for Group Environments",
             tech: "Computer Vision",
+            github: "https://github.com/Tanmay-alt/FaceDetector",
             points: [
                 "Developed a facial recognition program using machine learning to automate attendance collection for over 400 Georgia Tech students.",
                 "Engineered the system to process real-time video feeds with 95% recognition accuracy."
@@ -87,6 +90,7 @@ export const resumeData = {
         {
             name: "Predictive Modeling via Correlational Feature Analysis",
             tech: "Data Science",
+            github: "https://github.com/Tanmay-alt",
             points: [
                 "Predicted student test scores with high accuracy across a cohort of 5000+ students developing linear regression models.",
                 "Identified factors that boost scores by 30%."

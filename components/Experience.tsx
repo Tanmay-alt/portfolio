@@ -15,29 +15,34 @@ export default function Experience() {
                     Career Trajectory
                 </motion.h2>
 
-                <div className="space-y-12">
+                <div className="flex flex-col gap-12 max-w-4xl mx-auto">
                     {resumeData.experience.map((exp, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                            className="relative pl-8 border-l-2 border-slate-800 hover:border-primary-500 transition-colors pb-8 last:pb-0"
+                            transition={{ delay: index * 0.1, duration: 0.5 }}
+                            className="relative bg-slate-900/40 border border-slate-700/50 p-8 rounded-2xl md:ml-12 hover:border-primary-500/50 hover:bg-slate-900/60 transition-all duration-300 group"
                         >
-                            <div className="absolute -left-[9px] top-0 w-4 h-4 bg-slate-950 border-2 border-slate-600 rounded-full group-hover:border-primary-500 transition-colors" />
+                            {/* Timeline Connector */}
+                            <div className="hidden md:block absolute -left-[49px] top-10 w-4 h-4 bg-slate-950 border-2 border-primary-500 rounded-full z-10 shadow-[0_0_10px_rgba(20,184,166,0.5)]" />
+                            <div className="hidden md:block absolute -left-[42px] top-14 bottom-[-48px] w-[2px] bg-slate-800 group-last:hidden" />
 
-                            <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-4">
-                                <h3 className="text-2xl font-bold text-slate-100">{exp.role}</h3>
-                                <span className="text-primary-400 font-mono text-sm">{exp.date}</span>
+                            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6 gap-2">
+                                <div>
+                                    <h3 className="text-2xl font-bold text-slate-100 group-hover:text-primary-300 transition-colors">{exp.role}</h3>
+                                    <div className="text-lg text-primary-400 font-medium mt-1">{exp.company}</div>
+                                </div>
+                                <div className="inline-flex items-center px-3 py-1 bg-slate-800/50 rounded-full border border-slate-700 text-xs font-mono text-slate-300">
+                                    {exp.date}
+                                </div>
                             </div>
 
-                            <div className="text-xl text-primary-200 mb-4">{exp.company}</div>
-
-                            <ul className="space-y-3">
+                            <ul className="space-y-4">
                                 {exp.points.map((point, i) => (
-                                    <li key={i} className="text-slate-400 leading-relaxed flex gap-2">
-                                        <span className="text-primary-500 mt-1.5">▹</span>
+                                    <li key={i} className="text-slate-400 leading-relaxed flex gap-3 text-base">
+                                        <span className="text-primary-500 mt-1.5 shrink-0 text-xs">◆</span>
                                         <span>{point}</span>
                                     </li>
                                 ))}
