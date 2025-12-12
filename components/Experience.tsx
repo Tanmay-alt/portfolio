@@ -4,46 +4,44 @@ import { resumeData } from "@/lib/resumeData";
 
 export default function Experience() {
     return (
-        <section id="experience" className="py-24 bg-slate-950 relative overflow-hidden">
-            <div className="container relative z-10">
-                <motion.h2
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+        <section id="experience" className="py-24 relative overflow-hidden">
+            <div className="container relative z-10 px-4">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl font-display font-bold mb-12 text-center md:text-left text-primary-400"
+                    className="mb-16 md:mb-20"
                 >
-                    Career Trajectory
-                </motion.h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-100 tracking-tight">
+                        Experience.
+                    </h2>
+                    <div className="h-1 w-20 bg-primary-500 rounded-full" />
+                </motion.div>
 
-                <div className="flex flex-col gap-12 max-w-4xl mx-auto">
+                <div className="relative border-l border-slate-800 ml-3 md:ml-6 space-y-16">
                     {resumeData.experience.map((exp, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className="relative bg-slate-900/40 border border-slate-700/50 p-8 rounded-2xl md:ml-12 hover:border-primary-500/50 hover:bg-slate-900/60 transition-all duration-300 group"
+                            className="relative pl-8 md:pl-12"
                         >
-                            {/* Timeline Connector */}
-                            <div className="hidden md:block absolute -left-[49px] top-10 w-4 h-4 bg-slate-950 border-2 border-primary-500 rounded-full z-10 shadow-[0_0_10px_rgba(20,184,166,0.5)]" />
-                            <div className="hidden md:block absolute -left-[42px] top-14 bottom-[-48px] w-[2px] bg-slate-800 group-last:hidden" />
+                            {/* Timeline Node */}
+                            <div className="absolute -left-[5px] top-2 w-[11px] h-[11px] rounded-full bg-slate-950 border-2 border-primary-500 ring-4 ring-slate-950" />
 
-                            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6 gap-2">
-                                <div>
-                                    <h3 className="text-2xl font-bold text-slate-100 group-hover:text-primary-300 transition-colors">{exp.role}</h3>
-                                    <div className="text-lg text-primary-400 font-medium mt-1">{exp.company}</div>
-                                </div>
-                                <div className="inline-flex items-center px-3 py-1 bg-slate-800/50 rounded-full border border-slate-700 text-xs font-mono text-slate-300">
-                                    {exp.date}
-                                </div>
+                            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-4 gap-2">
+                                <h3 className="text-xl md:text-2xl font-semibold text-slate-100">
+                                    {exp.role} <span className="text-slate-500 font-normal">at</span> <span className="text-primary-400">{exp.company}</span>
+                                </h3>
+                                <span className="text-sm font-mono text-slate-500 shrink-0 uppercase tracking-wider">{exp.date}</span>
                             </div>
 
-                            <ul className="space-y-4">
+                            <ul className="space-y-3 max-w-3xl">
                                 {exp.points.map((point, i) => (
-                                    <li key={i} className="text-slate-400 leading-relaxed flex gap-3 text-base">
-                                        <span className="text-primary-500 mt-1.5 shrink-0 text-xs">◆</span>
-                                        <span>{point}</span>
+                                    <li key={i} className="text-slate-400 leading-relaxed text-base md:text-lg pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[10px] before:w-1.5 before:h-1.5 before:bg-slate-700 before:rounded-full">
+                                        {point}
                                     </li>
                                 ))}
                             </ul>
