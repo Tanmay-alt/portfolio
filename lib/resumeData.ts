@@ -25,45 +25,45 @@ export const resumeData = {
     },
     experience: [
         {
-            company: "Georgia Tech Research Institute (FDA)",
-            role: "Performance Optimization Engineer",
+            company: "Georgia Tech Research Institute",
+            role: "Product Manager",
             location: "Atlanta, GA",
             date: "July 2025 – Present",
             points: [
-                "Translated complex stakeholder requirements (FDA V&V) into a user-centric QA platform for 3D-printed medical implants.",
-                "Identified a critical user pain point and workflow bottleneck in the V&V pipeline, driving the development of an automated reporting feature.",
-                "Integrated an LLM with computer vision algorithms to automate high-precision dimensional analysis and compliance reporting."
+                "Translated complex stakeholder requirements (FDA V&V) into a user-centric QA platform for 3D-printed medical implants, defining the product specifications for a high-precision analysis interface and critical data-export features.",
+                "Identified a critical user pain point and workflow bottleneck in the V&V pipeline, driving the development of an automated reporting feature that slashed human error rates and measurably streamlined the data-to-submission process.",
+                "Established and enforced critical software data security measures to maintain the integrity of dimensional analysis evidence"
             ]
         },
         {
             company: "Georgia Tech Alumni Association",
-            role: "Data Analyst/Business Analyst",
+            role: "Data/Cyber Analyst",
             location: "Atlanta, GA",
             date: "June 2025 – Present",
             points: [
-                "Improved data accuracy by 20% across a 250,000+ record alumni database by designing and implementing new validation protocols.",
-                "Built automated ETL pipelines that ingested data from 4 sources, cutting manual prep time by 15%.",
-                "Guided strategic outreach campaigns by doing quantitative analysis and predictive models."
+                "Improved data accuracy by 20% across a 250,000+ record alumni database by designing and implementing new validation protocols leveraging ServiceNow to manage and resolve data integrity tickets, enhancing completeness for data collected from Microsoft ERP.",
+                "Built automated ETL pipelines that ingested data from 4 sources, cutting manual prep time by 15% and enabling faster reporting.",
+                "Guided strategic outreach campaigns by doing quantitative analysis and predictive models and generating data-driven reports using KPIs, translating complex financial data into actionable intelligence that contributed to a 30% increase in alumni engagement"
             ]
         },
         {
             company: "National Science Foundation",
-            role: "MATLAB GUI Designer/Frontend Engineer",
+            role: "Frontend Engineer",
             location: "Atlanta, GA",
             date: "Jul 2024 – May 2025",
             points: [
-                "Delivered a public, open-source software for nanoscale 3D printing by collaborating with a cross-functional team.",
-                "Enhanced system performance by 50% by engineering an interactive MATLAB GUI."
+                "Delivered a public, open-source software for nanoscale 3D printing by collaborating with a cross-functional team of four to architect and develop the tool for the research community on GitHub.",
+                "Enhanced system performance by 50% by engineering an interactive MATLAB GUI to dynamically test and tune over 50 configurable parameters, boosting accuracy from 29% to 68% accuracy rate in preprocessing workflows."
             ]
         },
         {
-            company: "Georgia Tech CBA (Computational Behavioral Analysis)",
-            role: "Machine Learning Intern",
+            company: "Computational Behavior Analysis research Lab",
+            role: "AI/ML Intern",
             location: "Atlanta, GA",
             date: "Aug 2024 – Jan 2025",
             points: [
-                "Achieved 96% accuracy in classifying 12 human activities by implementing and training deep learning models.",
-                "Reduced pre-training data requirements by 20% by leveraging ML models such as PyTorch."
+                "Achieved 96% accuracy in classifying 12 human activities by implementing and training deep learning models for Human Activity Recognition (HAR) using multi-modal sensor data.",
+                "Reduced pre-training data requirements by 20% by leveraging ML models such as PyTorch, minimizing the need for unlabeled data and improving model training efficiency."
             ]
         }
     ],
