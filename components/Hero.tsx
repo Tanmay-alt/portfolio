@@ -60,6 +60,9 @@ export default function Hero() {
                             href="/resume.pdf"
                             download="Tanmay_Joshi_Resume.pdf"
                             className="group px-8 py-4 border border-primary-500/50 hover:border-primary-400 text-primary-300 hover:text-white rounded-full transition-all duration-300 hover:-translate-y-1 backdrop-blur-sm bg-primary-950/20 hover:bg-primary-900/40 min-w-[180px] flex items-center justify-center gap-2"
+                            href="./tanmay_resume.pdf"
+                            download="Tanmay_Resume.pdf"
+                            className="px-8 py-4 bg-teal-500 hover:bg-teal-400 text-white rounded-full font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(20,184,166,0.4)] hover:-translate-y-1 text-sm"
                         >
                             <svg className="w-5 h-5 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                             Download Resume
